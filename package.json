@@ -1,0 +1,19 @@
+{
+  "name": "projet03_oc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnaudDefrancq/ArnaudDefrancq_3_27112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnaudDefrancq/ArnaudDefrancq_3_27112021/issues"
+  },
+  "homepage": "https://github.com/ArnaudDefrancq/ArnaudDefrancq_3_27112021#readme"
+}
