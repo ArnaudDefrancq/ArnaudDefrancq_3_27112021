@@ -1,0 +1,16 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #2e2e2e;
+  color: white;
+}
+.footer__flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
