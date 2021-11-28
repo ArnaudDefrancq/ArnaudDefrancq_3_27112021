@@ -1,0 +1,8 @@
+.footer {
+    background-color: $colour-footer;
+    color: white;
+        &__flex {
+            display: flex;
+        }
+        
+}
