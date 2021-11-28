@@ -12,6 +12,7 @@
 }
 .footer__logo--img {
   height: 20px;
+  filter: invert(100%);
 }
 .footer__about {
   margin-top: 10px;

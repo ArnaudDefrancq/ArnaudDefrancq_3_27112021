@@ -4,6 +4,7 @@
     padding: 30px;
         &__logo--img{
             height: 20px;
+            filter: invert(100%);
         }
         &__about {
             margin-top: 10px;
