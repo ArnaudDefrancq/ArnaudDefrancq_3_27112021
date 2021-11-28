@@ -6,11 +6,32 @@
 }
 
 .footer {
-  background-color: #2e2e2e;
+  background-color: #2e2e2ef5;
   color: white;
+  padding: 30px;
+}
+.footer__logo--img {
+  height: 20px;
+}
+.footer__about {
+  margin-top: 10px;
+  height: 100px;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .footer__flex {
   display: flex;
+  align-items: center;
+}
+.footer__icon {
+  font-size: 0.8rem;
+  width: 10px;
+}
+.footer__text-icon {
+  font-weight: bold;
+  padding-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
