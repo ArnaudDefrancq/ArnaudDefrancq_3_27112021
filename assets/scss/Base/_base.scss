@@ -9,3 +9,6 @@ a, a:visited {
     text-decoration: none;
     color: black;
 }
+input, input:checked {
+    display: none;
+}
