@@ -4,4 +4,20 @@ $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
 $colour-footer: #2e2e2ef5;
-$colour-background: #ededed;
+$colour-background: #f3f3f3;
+$colour-boxmenu: #00000036;
+
+// font
+
+@font-face {
+    font-family: 'font1_regular';
+    src: url(/assets/font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'font2_thin';
+    src: url(/assets/font/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: 'font3_title';
+    src: url(/assets/font/Shrikhand/Shrikhand-Regular.ttf);
+}

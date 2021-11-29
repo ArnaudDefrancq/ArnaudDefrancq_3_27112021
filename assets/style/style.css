@@ -1,5 +1,4 @@
 * {
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,10 +9,18 @@ a, a:visited {
   color: black;
 }
 
-input, input:checked {
-  display: none;
+@font-face {
+  font-family: "font1_regular";
+  src: url(/assets/font/Roboto/Roboto-Regular.ttf);
 }
-
+@font-face {
+  font-family: "font2_thin";
+  src: url(/assets/font/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "font3_title";
+  src: url(/assets/font/Shrikhand/Shrikhand-Regular.ttf);
+}
 .header {
   display: flex;
   align-items: center;
@@ -39,15 +46,80 @@ input, input:checked {
 }
 
 .section2 {
-  border: 1px solid black;
-  background: #ededed;
-  border-radius: 15px 15px 0 0;
+  background: #f3f3f3;
+  border-radius: 40px 40px 0 0;
 }
 .section2__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 30px;
+  height: 85px;
+  margin: 0 20px;
+  padding-top: 40px;
+  padding-right: 30px;
+}
+.section2__title h1 {
+  letter-spacing: 1.2px;
+  font-family: "font3_title", sans-serif;
+}
+.section2__title--icon {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.section2__grid-container {
+  display: grid;
+  row-gap: 30px;
+  margin: 20px 0;
+  font-family: "font1_regular";
+}
+.section2__grid-container--grid-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+  margin: 0 20px;
+}
+.section2__title-menu {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-family: "font2_thin";
+}
+.section2__title-menu::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 50px;
+  background: #99E2D0;
+}
+.section2__menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 0 0 6px #00000036;
+  background: white;
+  padding: 10px 25px 10px 10px;
+  height: 70px;
+}
+.section2__menu-container--title {
+  font-family: "font1_regular";
+}
+.section2__menu-container--argument {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.section2__menu-container--info {
+  font-family: "font2_thin";
 }
 
 .footer {
