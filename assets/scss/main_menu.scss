@@ -5,19 +5,19 @@
 @import "./Utils/_variables.scss";
 
 // Mixin
-@import "./Utils/mixin_menu.scss";
+@import "./Utils/Menu/mixin_menu.scss";
 
 // Le header
-@import "./Layout/_header.scss";
+@import "./Layout/Menu/header.scss";
 
 // Image menu
-@import "./Pages/page--menu1.scss";
+@import "./Pages/Menu/page--menu1.scss";
 
 // Le menu
-@import "./Layout/menu.scss";
+@import "./Layout/Menu/menu.scss";
 
 // Bouton
-@import "./Layout/button.scss";
+@import "./Layout/Menu/button.scss";
 
 // Le footer
-@import "./Layout/_footer.scss";
+@import "./Layout/Menu/footer.scss";
