@@ -5,13 +5,13 @@
 @import "./Utils/_variables.scss";
 
 // Les mixins
-@import "./Utils/mixin.scss";
+@import "./Utils/Accueil/mixin.scss";
 
 // Le header
-@import "./Layout/_header-accueil.scss";
+@import "./Layout/Accueil/header-accueil.scss";
 
 // Les section1, 2, 3
-@import "./Pages/page--accueil.scss";
+@import "./Pages/Accueil/page--accueil.scss";
 
 // Le footer
-@import "./Layout/_footer.scss";
+@import "./Layout/footer.scss";
