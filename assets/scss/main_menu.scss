@@ -1,0 +1,20 @@
+// Les fondations
+@import "./Base/_base.scss";
+
+// Les variables
+@import "./Utils/_variables.scss";
+
+// Le header
+@import "./Layout/_header.scss";
+
+// Image menu
+@import "./Pages/page--menu4.scss";
+
+// Le menu
+@import "./Layout/menu.scss";
+
+// Bouton
+@import "./Layout/button.scss";
+
+// Le footer
+@import "./Layout/_footer.scss";
