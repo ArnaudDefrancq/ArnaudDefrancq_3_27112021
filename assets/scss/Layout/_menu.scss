@@ -54,14 +54,7 @@
                 }
         }
         &__menu-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            border-radius: 15px;
-            box-shadow: 0 0 6px $colour-boxmenu;
-            background: white;
-            padding: 10px 25px 10px 10px;
-            height: 70px;
+            @include carteMenu;
                 &--title {
                     font-family: 'font1_regular';
                 }
