@@ -1,7 +1,36 @@
-@mixin home-box {
-    display: flex;
-    justify-content: space-between;
+@mixin btnAccueil {
+    padding: 15px 20px;
+    border-radius: 40px;
+    border: none;
+    background: #9356dc;
+    background: linear-gradient(90deg,#9356dc 0%, #ff79da 100%);
+    background: -webkit-linear-gradient(90deg,#9356dc 0%, #ff79da 100%);
+    background: -moz-linear-gradient(90deg,#9356dc 0%, #ff79da 100%);
+    color: white;
+    font-family: 'font1_regular';
+    font-size: 1.05rem;
+}
+
+@mixin home-box($color: $colour-boxmenu, $colour: $colour-background) {
     border-radius: 15px;
-    box-shadow: 0 0 6px $colour-boxmenu;
+    box-shadow: 0 0 6px $color;
     background: white;
+    padding-right: 70px;
+    padding-left: 30px;
+    font-family: 'font1_regular';
+    height: 60px;
+    background: $colour;
+    position: relative;
+}
+
+@mixin home-box-color($color: $colour-boxmenu) {
+    border-radius: 15px;
+    box-shadow: 0 0 6px $color;
+    background: white;
+    padding-right: 70px;
+    padding-left: 30px;
+    font-family: 'font1_regular';
+    background-color: #9356dc21;
+    height: 60px;
+    position: relative;
 }

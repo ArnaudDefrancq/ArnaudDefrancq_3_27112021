@@ -84,16 +84,65 @@ a, a:visited {
 .help {
   margin: 50px 20px;
 }
+.help--title {
+  margin-bottom: 30px;
+  font-family: "font1_regular";
+  font-weight: 2000;
+}
 .help__grid {
   display: grid;
   margin: 10px;
+  row-gap: 30px;
 }
 .help__grid--carte {
-  display: flex;
-  justify-content: space-between;
   border-radius: 15px;
   box-shadow: 0 0 6px #00000036;
   background: white;
+  padding-right: 70px;
+  padding-left: 30px;
+  font-family: "font1_regular";
+  height: 60px;
+  background: #f3f3f3;
+  position: relative;
+}
+.help__grid--carte-color {
+  border-radius: 15px;
+  box-shadow: 0 0 6px #00000036;
+  background: white;
+  padding-right: 70px;
+  padding-left: 30px;
+  font-family: "font1_regular";
+  background-color: #9356dc21;
+  height: 60px;
+  position: relative;
+}
+.help__grid--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+}
+.help__grid--icon {
+  font-size: 1.2rem;
+  color: #909090;
+}
+.help__grid--icon-color {
+  color: #9356DC;
+}
+.help__grid--number {
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356DC;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 0.8rem;
 }
 
 .footer {
