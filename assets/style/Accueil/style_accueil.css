@@ -34,15 +34,22 @@ a, a:visited {
 .home__city {
   display: flex;
   align-items: center;
-  justify-content: center;
   background: #e4e4e4;
   width: 100%;
   height: 50px;
   font-family: "font1_regular";
+  text-align: center;
 }
 .home__city--icon {
-  position: absolute;
-  left: 100px;
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-end;
+}
+.home__city--name {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
 .home__block {
   background: #f3f3f3;
