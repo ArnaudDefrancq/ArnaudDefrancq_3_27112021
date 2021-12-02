@@ -15,7 +15,7 @@
     border-radius: 15px;
     box-shadow: 0 0 6px $color;
     background: white;
-    padding-right: 70px;
+    padding-right: 50px;
     padding-left: 30px;
     font-family: 'font1_regular';
     height: 60px;
@@ -33,4 +33,12 @@
     background-color: #9356dc21;
     height: 60px;
     position: relative;
+}
+
+@mixin box-new {
+    background: $colour-tertiary;
+    color: green;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
 }
