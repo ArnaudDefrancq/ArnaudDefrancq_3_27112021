@@ -35,6 +35,11 @@
     position: relative;
 }
 
+@mixin box-resto {
+    border-radius: 20px;
+    box-shadow: 0 0 6px $colour-boxmenu;
+}
+
 @mixin box-new {
     background: $colour-tertiary;
     color: green;
