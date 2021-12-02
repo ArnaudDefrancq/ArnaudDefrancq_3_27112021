@@ -1,0 +1,16 @@
+@media screen and (min-width: 992px) {
+    .section1 {
+        height: 500px;
+            &__img {
+                height: 550px;
+            }
+    }
+    .footer {
+        padding: 30px;
+            &__about {
+                flex-direction: row;
+                align-items: center;
+                font-size: 1rem;
+            }
+    }
+}

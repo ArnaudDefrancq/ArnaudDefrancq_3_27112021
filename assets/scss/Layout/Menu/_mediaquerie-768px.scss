@@ -1,0 +1,8 @@
+@media screen and (min-width: 768px) {
+    .section1 {
+        height: 350px;
+            &__img {
+                height: 400px;
+            }
+    }
+}

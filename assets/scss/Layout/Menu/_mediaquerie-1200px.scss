@@ -1,0 +1,63 @@
+@media screen and (min-width: 1200px) {
+    .header {
+        height: 50px;
+            &__img {
+                height: 40px;
+            }
+            &__icon {
+                left: 50px;
+            }
+    }
+    .section1 {
+        height: 500px;
+            &__img {
+                height: 550px;
+            }
+    }
+    .section2 {
+            &__title {
+             font-size: 1.3rem;
+             padding-left: 20px;
+                &--icon {
+                    font-size: 2rem;
+                }
+            }
+            &__grid-container {
+                margin: 60px 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "start meal desserte"
+                "menu1 menu2 menu3";
+
+                .start {
+                    grid-area: start;
+                }
+                .meal {
+                    grid-area: meal;
+                }
+                .desserte {
+                    grid-area: desserte;
+                }
+                .menu1 {
+                    grid-area: menu1;
+                }
+                .menu2 {
+                    grid-area: menu2;
+                }
+                .menu3 {
+                    grid-area: menu3;
+                }
+            }
+            &__menu-container {
+                height: 90px;
+            }
+    }
+    .footer {
+        padding: 30px 40px;
+            &__about {
+                flex-direction: row;
+                align-items: center;
+                font-size: 1rem;
+            }
+    }
+}
