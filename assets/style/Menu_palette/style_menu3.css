@@ -41,7 +41,7 @@ a, a:visited {
   height: 250px;
 }
 .section1__img {
-  background: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+  background: url(/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
   height: 300px;
 }
 
@@ -172,6 +172,93 @@ a, a:visited {
 .footer__text-icon {
   font-weight: bold;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .section1 {
+    height: 350px;
+  }
+  .section1__img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section1 {
+    height: 500px;
+  }
+  .section1__img {
+    height: 550px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+  .footer__about {
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 50px;
+  }
+  .header__img {
+    height: 40px;
+  }
+  .header__icon {
+    left: 50px;
+  }
+
+  .section1 {
+    height: 500px;
+  }
+  .section1__img {
+    height: 550px;
+  }
+
+  .section2__title {
+    font-size: 1.3rem;
+    padding-left: 20px;
+  }
+  .section2__title--icon {
+    font-size: 2rem;
+  }
+  .section2__grid-container {
+    margin: 60px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "start meal desserte" "menu1 menu2 menu3";
+  }
+  .section2__grid-container .start {
+    grid-area: start;
+  }
+  .section2__grid-container .meal {
+    grid-area: meal;
+  }
+  .section2__grid-container .desserte {
+    grid-area: desserte;
+  }
+  .section2__grid-container .menu1 {
+    grid-area: menu1;
+  }
+  .section2__grid-container .menu2 {
+    grid-area: menu2;
+  }
+  .section2__grid-container .menu3 {
+    grid-area: menu3;
+  }
+  .section2__menu-container {
+    height: 90px;
+  }
+
+  .footer {
+    padding: 30px 40px;
+  }
+  .footer__about {
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style_menu3.css.map */
