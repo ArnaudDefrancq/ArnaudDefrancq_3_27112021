@@ -16,7 +16,7 @@
     box-shadow: 0 0 6px $color;
     background: white;
     padding-right: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
     font-family: 'font1_regular';
     height: 60px;
     background: $colour;
@@ -27,12 +27,19 @@
     border-radius: 15px;
     box-shadow: 0 0 6px $color;
     background: white;
-    padding-right: 70px;
-    padding-left: 30px;
+    padding-right: 50px;
+    padding-left: 10px;
     font-family: 'font1_regular';
     background-color: #9356dc21;
     height: 60px;
     position: relative;
+}
+
+@mixin icon-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
 }
 
 @mixin box-resto {

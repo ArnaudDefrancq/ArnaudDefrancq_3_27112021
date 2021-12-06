@@ -4,22 +4,19 @@
     flex-direction: column;
         &__city{
             display: flex;
+            justify-content: center;
             align-items: center;
             background: #e4e4e4;
             width: 100%;
-            height: 50px;
+            height: 45px;
             font-family: 'font1_regular';
-            text-align: center;
+
                 &--icon {
-                    flex: 0.5;
-                    display: flex;
-                    justify-content: flex-end;
+                    padding-right: 15px;
                 }   
                 &--name {
-                    flex: 1;
-                    display: flex;
-                    justify-content: flex-start;
-                    margin-left: 20px;
+                    padding-right: 15px;
+                    font-size: 1rem;
                 }
         }
         &__block {
@@ -32,8 +29,8 @@
                     margin-top: 40px;
                     width: 70%;
                     text-align: center;
-                    font-family: 'font1_regular';
-                    font-weight: 900;
+                    font-family: 'font4_title-accueil';
+                    font-size: 1.1rem;
                 }
                 &--text {
                     margin-top: 20px;
@@ -55,8 +52,7 @@
     margin: 50px 20px;
         &--title {
             margin-bottom: 30px;
-            font-family: 'font1_regular';
-            font-weight: 2000;
+            font-family: 'font4_title-accueil';
         }
         &__grid {
             display: grid;
@@ -69,20 +65,24 @@
                         }
                 }
                 &--flex {
-                    display: flex;
-                    align-items: center;
+                    display: grid;
+                    grid-template-columns: 0.3fr 1fr;
                     height: 100%;
-                    font-weight: bold;
                 }
                 &--icon {
-                    font-size: 1.1rem;
-                    width: 20px;
+                    @include icon-help;
                     color: #909090;
-
                         &-color {
+                            @include icon-help;
                             color: $colour-primary;
-                            width: 20px;
                         }
+                }
+                &--test {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 100%;
+                    font-weight: bold;
                 }
                 &--number {
                     position: absolute;
@@ -100,15 +100,12 @@
                 }
         }
 }
-.test {
-    padding-left: 20px;
-}
 // Section3
 .resto {
     background: $colour-background;
     padding: 40px 20px;
         &--title {
-            font-family: 'font1_regular';
+            font-family: 'font4_title-accueil';
         }
         &__grid{
             margin-top: 25px;
@@ -151,11 +148,11 @@
             border-radius: 0 0 20px 20px;
                 &--title {
                     margin-bottom: 5px;
-                    font-family: 'font1_regular';
+                    font-family: 'font4_title-accueil';
                     font-weight: bolder;
                 }
                 &--place {
-                    font-family: "font2-thin";
+                    font-family: 'font1_regular';
                 }
         }
         &__icon {

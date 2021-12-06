@@ -21,10 +21,17 @@ a, a:visited {
   font-family: "font3_title";
   src: url("../../font/Shrikhand/Shrikhand-Regular.ttf");
 }
+@font-face {
+  font-family: "font4_title-accueil";
+  src: url("../../font/Roboto/Roboto-Medium.ttf");
+}
 .header {
   display: flex;
   justify-content: center;
-  margin: 15px 0;
+  height: 50px;
+}
+.header--logo {
+  width: 40%;
 }
 
 .home {
@@ -33,23 +40,19 @@ a, a:visited {
 }
 .home__city {
   display: flex;
+  justify-content: center;
   align-items: center;
   background: #e4e4e4;
   width: 100%;
-  height: 50px;
+  height: 45px;
   font-family: "font1_regular";
-  text-align: center;
 }
 .home__city--icon {
-  flex: 0.5;
-  display: flex;
-  justify-content: flex-end;
+  padding-right: 15px;
 }
 .home__city--name {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 20px;
+  padding-right: 15px;
+  font-size: 1rem;
 }
 .home__block {
   background: #f3f3f3;
@@ -62,8 +65,8 @@ a, a:visited {
   margin-top: 40px;
   width: 70%;
   text-align: center;
-  font-family: "font1_regular";
-  font-weight: 900;
+  font-family: "font4_title-accueil";
+  font-size: 1.1rem;
 }
 .home__block--text {
   margin-top: 20px;
@@ -93,8 +96,7 @@ a, a:visited {
 }
 .help--title {
   margin-bottom: 30px;
-  font-family: "font1_regular";
-  font-weight: 2000;
+  font-family: "font4_title-accueil";
 }
 .help__grid {
   display: grid;
@@ -106,7 +108,7 @@ a, a:visited {
   box-shadow: 0 0 6px #00000036;
   background: white;
   padding-right: 50px;
-  padding-left: 30px;
+  padding-left: 10px;
   font-family: "font1_regular";
   height: 60px;
   background: #f3f3f3;
@@ -116,27 +118,38 @@ a, a:visited {
   border-radius: 15px;
   box-shadow: 0 0 6px #00000036;
   background: white;
-  padding-right: 70px;
-  padding-left: 30px;
+  padding-right: 50px;
+  padding-left: 10px;
   font-family: "font1_regular";
   background-color: #9356dc21;
   height: 60px;
   position: relative;
 }
 .help__grid--flex {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
   height: 100%;
-  font-weight: bold;
 }
 .help__grid--icon {
-  font-size: 1.1rem;
-  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
   color: #909090;
 }
 .help__grid--icon-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
   color: #9356DC;
-  width: 20px;
+}
+.help__grid--test {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: bold;
 }
 .help__grid--number {
   position: absolute;
@@ -153,16 +166,12 @@ a, a:visited {
   font-size: 0.8rem;
 }
 
-.test {
-  padding-left: 20px;
-}
-
 .resto {
   background: #f3f3f3;
   padding: 40px 20px;
 }
 .resto--title {
-  font-family: "font1_regular";
+  font-family: "font4_title-accueil";
 }
 .resto__grid {
   margin-top: 25px;
@@ -207,11 +216,11 @@ a, a:visited {
 }
 .resto__name--title {
   margin-bottom: 5px;
-  font-family: "font1_regular";
+  font-family: "font4_title-accueil";
   font-weight: bolder;
 }
 .resto__name--place {
-  font-family: "font2-thin";
+  font-family: "font1_regular";
 }
 .resto__icon {
   font-size: 1.6rem;
