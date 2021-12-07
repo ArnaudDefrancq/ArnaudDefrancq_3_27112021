@@ -105,11 +105,18 @@
 .input__menu {
         &--label {
             width: 100%;
+            height: 100%;
+            position: absolute;
         }
 }
 
+
 .input__menu:checked+.input__menu-container .input__menu--label{
     width: calc(100% - 50px);
+    transition: 1s;
+  }
+.input__menu:checked+.input__menu-container {
+    padding-right: 90px;
     transition: 1s;
   }
 .input__menu:checked+.input__menu-container .input__menu--label .section2__menu-container--info--text {
