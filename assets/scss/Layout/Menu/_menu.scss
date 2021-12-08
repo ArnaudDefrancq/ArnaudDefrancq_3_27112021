@@ -21,7 +21,7 @@
                     justify-content: center;
                     align-items: center;
                     font-size: 1.7rem;
-                    cursor: pointer;
+                    
                 }
                 &:checked+&--label &--icon i {
                     font-weight: 900;
@@ -67,18 +67,27 @@
             overflow: hidden;
                 &--title {
                     font-family: 'font1_regular';
+                        & h3 {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                }
+                &--price {
+                    font-family: 'font1_regular';
                 }
                 &--argument {
                     display: flex;
                     // align-items: center;
                     justify-content: space-between;
                     margin-top: 10px;
+
                     
 
                 }
                 &--info{
                     font-family: 'font2_thin';
-                    width: 250px;
+                    min-width: 150px;
                         &--text {
                             white-space: nowrap;
                             overflow: hidden;
@@ -107,6 +116,7 @@
             width: 100%;
             height: 100%;
             position: absolute;
+            cursor: pointer;
         }
 }
 
@@ -119,13 +129,14 @@
     padding-right: 90px;
     transition: 1s;
   }
-.input__menu:checked+.input__menu-container .input__menu--label .section2__menu-container--info--text {
+.input__menu:checked+.input__menu-container .input__menu--label .section2__menu-container--title {
     width: 200px;
     transition: 1s;
-}
+ }
+
  .input__menu:checked+.input__menu-container .section2__menu-container--checked{
     right: 0px;
-      transition: 1s;
+    transition: 1s;
 }
 .input__menu:checked+.input__menu-container .fas {
     transform: rotate(360deg);

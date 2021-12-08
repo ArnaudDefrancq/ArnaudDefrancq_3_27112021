@@ -13,6 +13,10 @@ input, input:checked {
   display: none;
 }
 
+label {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "font1_regular";
   src: url("../../font/Roboto/Roboto-Regular.ttf");
@@ -76,7 +80,6 @@ input, input:checked {
   justify-content: center;
   align-items: center;
   font-size: 1.7rem;
-  cursor: pointer;
 }
 .section2__input:checked + .section2__input--label .section2__input--icon i {
   font-weight: 900;
@@ -129,6 +132,14 @@ input, input:checked {
 .section2__menu-container--title {
   font-family: "font1_regular";
 }
+.section2__menu-container--title h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section2__menu-container--price {
+  font-family: "font1_regular";
+}
 .section2__menu-container--argument {
   display: flex;
   justify-content: space-between;
@@ -136,7 +147,7 @@ input, input:checked {
 }
 .section2__menu-container--info {
   font-family: "font2_thin";
-  width: 250px;
+  min-width: 150px;
 }
 .section2__menu-container--info--text {
   white-space: nowrap;
@@ -162,6 +173,7 @@ input, input:checked {
   width: 100%;
   height: 100%;
   position: absolute;
+  cursor: pointer;
 }
 
 .input__menu:checked + .input__menu-container .input__menu--label {
@@ -174,7 +186,7 @@ input, input:checked {
   transition: 1s;
 }
 
-.input__menu:checked + .input__menu-container .input__menu--label .section2__menu-container--info--text {
+.input__menu:checked + .input__menu-container .input__menu--label .section2__menu-container--title {
   width: 200px;
   transition: 1s;
 }
@@ -207,6 +219,12 @@ input, input:checked {
   font-size: 1.1rem;
   height: 28%;
   margin-top: 30px;
+}
+.block__btn:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+  -webkit-filter: brightness(150%);
+  -moz-filter: brightness(150%);
 }
 
 .footer {

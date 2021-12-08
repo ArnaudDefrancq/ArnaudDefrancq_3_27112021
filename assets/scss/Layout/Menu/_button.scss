@@ -4,5 +4,11 @@
     height: 200px;
         &__btn {
             @include btnMenu;
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(150%);
+                    -webkit-filter: brightness(150%);
+                    -moz-filter: brightness(150%);
+                }
         }
 }
