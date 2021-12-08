@@ -9,6 +9,14 @@ a, a:visited {
   color: black;
 }
 
+input, input:checked {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "font1_regular";
   src: url("../../font/Roboto/Roboto-Regular.ttf");
@@ -184,6 +192,10 @@ a, a:visited {
   border-radius: 20px;
   box-shadow: 0 0 6px #00000036;
 }
+.resto__link:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
 .resto__carte1 {
   background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
   height: 70%;
@@ -211,7 +223,7 @@ a, a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px 0 10px;
+  padding: 0 35px 0 15px;
   border-radius: 0 0 20px 20px;
 }
 .resto__name--title {
@@ -222,8 +234,14 @@ a, a:visited {
 .resto__name--place {
   font-family: "font1_regular";
 }
-.resto__icon {
-  font-size: 1.6rem;
+.resto__input--label {
+  font-size: 1.5rem;
+}
+:checked + .resto__input--label i {
+  font-weight: 900;
+  color: #9356dc;
+  transform: scale(1.3);
+  transition: 1s;
 }
 .resto__new {
   position: absolute;
