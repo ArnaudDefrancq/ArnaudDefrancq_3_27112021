@@ -46,9 +46,9 @@
             @include btnAccueil;
                 &:hover {
                     cursor: pointer;
-                    filter: brightness(150%);
-                    -webkit-filter: brightness(150%);
-                    -moz-filter: brightness(150%);
+                    filter: brightness(125%);
+                    -webkit-filter: brightness(125%);
+                    -moz-filter: brightness(125%);
                 }
         }
 }
