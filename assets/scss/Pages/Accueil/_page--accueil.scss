@@ -44,6 +44,12 @@
     margin: 40px 0 50px 0;
         &--style {
             @include btnAccueil;
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(150%);
+                    -webkit-filter: brightness(150%);
+                    -moz-filter: brightness(150%);
+                }
         }
 }
 
@@ -65,9 +71,10 @@
                         }
                 }
                 &--flex {
-                    display: grid;
-                    grid-template-columns: 0.3fr 1fr;
+                    display: flex;
+                    text-align: center;
                     height: 100%;
+                    
                 }
                 &--icon {
                     @include icon-help;
@@ -80,8 +87,6 @@
                 &--test {
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
-                    width: 100%;
                     font-weight: bold;
                 }
                 &--number {
