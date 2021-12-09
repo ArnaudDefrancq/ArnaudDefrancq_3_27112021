@@ -1,3 +1,51 @@
+.spinner {
+    font-size: 7rem;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    background: #f3f3f3a1;
+    animation: load 2s;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: $colour-tertiary;
+        
+    }
+        &--icon {
+            color: $colour-primary;
+            z-index: 1;
+            animation: load-spinner 2s;
+
+        }
+}
+
+@keyframes load {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes load-spinner {
+    0% {
+        position: initial;
+    }
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}
+
 // section1
 .home {
     display: flex;
@@ -168,12 +216,7 @@
                 &--label {
                     font-size: 1.5rem;
                 }
-            :checked+&--label i {
-                font-weight: 900;
-                color: #9356dc;
-                transform: scale(1.3);
-                transition: 1s;
-            }
+
         }
         &__new {
             position: absolute;

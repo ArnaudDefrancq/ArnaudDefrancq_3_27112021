@@ -42,6 +42,49 @@ label {
   width: 40%;
 }
 
+.spinner {
+  font-size: 7rem;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  visibility: hidden;
+  background: #f3f3f3a1;
+  animation: load 2s;
+}
+.spinner::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #99E2D0;
+}
+.spinner--icon {
+  color: #9356DC;
+  z-index: 1;
+  animation: load-spinner 2s;
+}
+
+@keyframes load {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes load-spinner {
+  0% {
+    position: initial;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -100,9 +143,9 @@ label {
 }
 .btn--style:hover {
   cursor: pointer;
-  filter: brightness(150%);
-  -webkit-filter: brightness(150%);
-  -moz-filter: brightness(150%);
+  filter: brightness(125%);
+  -webkit-filter: brightness(125%);
+  -moz-filter: brightness(125%);
 }
 
 .help {
@@ -242,12 +285,6 @@ label {
 }
 .resto__input--label {
   font-size: 1.5rem;
-}
-:checked + .resto__input--label i {
-  font-weight: 900;
-  color: #9356dc;
-  transform: scale(1.3);
-  transition: 1s;
 }
 .resto__new {
   position: absolute;
