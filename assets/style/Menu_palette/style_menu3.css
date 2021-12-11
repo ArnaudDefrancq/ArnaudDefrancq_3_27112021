@@ -53,7 +53,7 @@ label {
   height: 250px;
 }
 .section1__img {
-  background: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
+  background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
   height: 300px;
 }
 
@@ -70,26 +70,53 @@ label {
   margin: 0 20px;
   padding-top: 40px;
   padding-right: 30px;
+  position: relative;
 }
 .section2__title h1 {
   letter-spacing: 1.2px;
   font-family: "font3_title", sans-serif;
 }
-.section2__input--icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
+.section2__input--heart {
+  height: 35px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
 }
-.section2__input:checked + .section2__input--label .section2__input--icon i {
-  font-weight: 900;
-  color: #9356dc;
-  transition: 1s;
+
+.heart-empty:hover {
+  animation: heart-empty 1s;
 }
-.section2__input:hover + .section2__input--label .section2__input--icon i {
-  font-weight: 900;
-  color: #9356dc;
-  transition: 1s;
+
+.heart-full:hover {
+  animation: heart-full 1s;
+}
+
+.section2__input:checked + .section2__input--label .section2__input--icon .heart-empty {
+  animation: heart-empty 1s;
+  animation-fill-mode: forwards;
+}
+
+.section2__input:checked + .section2__input--label .section2__input--icon .heart-full {
+  animation: heart-full 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heart-empty {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-full {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .section2__grid-container {
   display: grid;
