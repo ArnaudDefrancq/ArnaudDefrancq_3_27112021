@@ -1,0 +1,22 @@
+@media screen and (min-width: 1400px) {
+    .help {
+        height: 150px;
+            &__grid {
+                margin: 0 50px;
+                    &--flex {
+                        padding-right: 30px;
+                    }
+            }
+    }
+
+    .resto {
+        height: 100%;
+            &__grid {
+                height: 800px;
+                margin: 40px 100px;
+            }
+    }
+    .test {
+        height: 90%;
+    }
+}

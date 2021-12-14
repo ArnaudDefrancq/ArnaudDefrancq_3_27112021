@@ -210,8 +210,9 @@ label {
 }
 .help__grid--number {
   position: absolute;
-  top: 20px;
-  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,14 +237,17 @@ label {
   row-gap: 30px;
 }
 .resto__link {
-  height: 250px;
-  position: relative;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 0 6px #00000036;
 }
 .resto__link:hover {
   transform: scale(1.05);
   transition: 0.3s;
+}
+.resto__name {
+  width: 100%;
 }
 .resto__carte1 {
   background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
@@ -283,8 +287,10 @@ label {
 .resto__name--place {
   font-family: "font1_regular";
 }
-.resto__input--label {
-  font-size: 1.5rem;
+.resto__input--heart {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
 }
 .resto__new {
   position: absolute;
@@ -296,6 +302,49 @@ label {
   border-radius: 5px;
   font-family: "font1_regular";
   font-size: 0.85rem;
+}
+
+.test {
+  position: relative;
+  height: 250px;
+}
+
+.heart-empty:hover {
+  animation: heart-empty 1s;
+}
+
+.heart-full:hover {
+  animation: heart-full 1s;
+}
+
+.resto__input:checked + .resto__input--label .resto__input--icon label .heart-empty {
+  animation: heart-empty 1s;
+  animation-fill-mode: forwards;
+}
+
+.resto__input:checked + .resto__input--label .resto__input--icon label .heart-full {
+  animation: heart-full 1s;
+}
+
+@keyframes heart-empty {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-full {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.test:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .footer {
@@ -330,12 +379,25 @@ label {
 }
 
 @media screen and (min-width: 500px) {
+  .header {
+    margin: 20px 0;
+  }
+
   .help--title {
     margin-left: 15px;
   }
 
   .help__grid {
     margin: 0 35px;
+  }
+  .help__grid--flex {
+    justify-content: center;
+  }
+  .help__grid--icon {
+    margin-right: 50px;
+  }
+  .help__grid--icon-color {
+    margin-right: 50px;
   }
 
   .resto--title {
@@ -344,6 +406,10 @@ label {
 
   .resto__grid {
     margin: 30px 35px 0 35px;
+  }
+
+  .footer {
+    padding-left: 50px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -358,6 +424,18 @@ label {
   .help__grid {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+  }
+  .help__grid--carte {
+    padding: 0;
+  }
+  .help__grid--carte-color {
+    padding: 0em;
+  }
+  .help__grid--icon {
+    margin-right: 20px;
+  }
+  .help__grid--icon-color {
+    margin-right: 20px;
   }
 
   .resto__grid {
@@ -381,6 +459,29 @@ label {
   }
   .footer__flex, .footer__text-about {
     padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .help {
+    height: 150px;
+  }
+  .help__grid {
+    margin: 0 50px;
+  }
+  .help__grid--flex {
+    padding-right: 30px;
+  }
+
+  .resto {
+    height: 100%;
+  }
+  .resto__grid {
+    height: 800px;
+    margin: 40px 100px;
+  }
+
+  .test {
+    height: 90%;
   }
 }
 

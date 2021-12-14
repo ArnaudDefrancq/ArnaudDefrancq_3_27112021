@@ -9,6 +9,20 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 50px;
             }
+            &__grid {
+                    &--carte {
+                        padding: 0;
+                            &-color {
+                                padding: 0em;
+                            }
+                    }
+                    &--icon {
+                        margin-right: 20px;
+                            &-color {
+                                margin-right: 20px;
+                            }
+                    }
+            }
     }
     .resto {
             &__grid {

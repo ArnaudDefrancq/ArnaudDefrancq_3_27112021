@@ -1,14 +1,30 @@
 @media screen and (min-width: 500px) {
+    .header {
+        margin: 20px 0;
+    }
     .help--title {
         margin-left: 15px;
     }
     .help__grid {
         margin: 0 35px;
+            &--flex {
+                justify-content: center;
+            }
+            &--icon {
+                margin-right: 50px;
+                    &-color {
+                        margin-right: 50px;
+                    }
+            }
+
     }
     .resto--title {
         margin-left: 15px;
     }
     .resto__grid {
         margin: 30px 35px 0 35px;
+    }
+    .footer {
+        padding-left: 50px;
     }
 }
