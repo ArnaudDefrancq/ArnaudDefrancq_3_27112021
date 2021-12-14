@@ -477,9 +477,21 @@ label {
     height: 800px;
     margin: 40px 100px;
   }
-
-  .test {
-    height: 90%;
+  .resto__card {
+    height: 100%;
+  }
+  .resto__name {
+    font-size: 1.2rem;
+    padding-left: 25px;
+  }
+  .resto__name--title {
+    margin-top: 20px;
+  }
+  .resto__name--flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
