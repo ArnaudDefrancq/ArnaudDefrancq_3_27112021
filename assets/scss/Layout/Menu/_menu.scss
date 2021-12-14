@@ -20,10 +20,6 @@
     }
 
     &__input {
-        &--icon {}
-
-        &--label {}
-
         &--heart {
             height: 35px;
             width: 30px;
@@ -178,24 +174,24 @@
 }
 
 
-.test {
-    animation: testing 1.5s;
+.animation1 {
+    animation: animation-menu 1.5s;
     transform-origin: bottom;
     transform: translateY(1000%);
     animation-fill-mode: forwards;
     animation-delay: 100ms;
 }
 
-.test2 {
-    animation: testing 1.5s;
+.animation2 {
+    animation: animation-menu 1.5s;
     transform-origin: bottom;
     transform: translateY(1000%);
     animation-fill-mode: forwards;
     animation-delay: 200ms;
 }
 
-.test3 {
-    animation: testing 1.5s;
+.animation3 {
+    animation: animation-menu 1.5s;
     transform-origin: bottom;
     transform: translateY(1000%);
     animation-fill-mode: forwards;
@@ -203,7 +199,7 @@
 }
 
 
-@keyframes testing {
+@keyframes animation-menu {
     0% {
         transform: translateY(1000%);
         opacity: 0%;
