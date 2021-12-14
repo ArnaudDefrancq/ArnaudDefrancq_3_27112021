@@ -9,6 +9,7 @@
     color: white;
     font-family: 'font1_regular';
     font-size: 1.05rem;
+    box-shadow: 0 0 6px 0 #707070;
 }
 
 @mixin home-box($color: $colour-boxmenu, $colour: $colour-background) {

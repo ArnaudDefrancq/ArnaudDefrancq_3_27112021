@@ -140,12 +140,14 @@ label {
   color: white;
   font-family: "font1_regular";
   font-size: 1.05rem;
+  box-shadow: 0 0 6px 0 #707070;
 }
 .btn--style:hover {
   cursor: pointer;
   filter: brightness(125%);
   -webkit-filter: brightness(125%);
   -moz-filter: brightness(125%);
+  box-shadow: 0 0 6px 0 black;
 }
 
 .help {

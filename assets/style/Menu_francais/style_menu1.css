@@ -311,7 +311,7 @@ label {
   background: -webkit-linear-gradient(90deg, #9356dc 0%, #ff79da 100%);
   background: -moz-linear-gradient(90deg, #9356dc 0%, #ff79da 100%);
   color: white;
-  box-shadow: 0 0 6px #484848;
+  box-shadow: 0 0 3px #484848;
   font-family: "font1_regular";
   font-size: 1.1rem;
   height: 28%;
@@ -322,6 +322,7 @@ label {
   filter: brightness(125%);
   -webkit-filter: brightness(125%);
   -moz-filter: brightness(125%);
+  box-shadow: 0 0 6px 0 black;
 }
 
 .footer {
