@@ -2,16 +2,13 @@
 @import "./Base/_base.scss";
 
 // Les variables
-@import "./Utils/_variables.scss";
+@import "./Utils/_variables-menu.scss";
 
 // Les mixins
 @import "./Utils/Accueil/mixin.scss";
 
-// Le header
-@import "./Layout/Accueil/header-accueil.scss";
-
 // Les section1, 2, 3
-@import "./Pages/Accueil/page--accueil.scss";
+@import "./Layout/Accueil/page--accueil";
 
 // Le footer
 @import "./Layout/footer.scss";

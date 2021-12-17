@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style/main_accueil.css">
     <script src="https://kit.fontawesome.com/daf6fd0411.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,24 +16,23 @@
         <i class="fas fa-circle-notch spinner--icon"></i>
     </div>
 
-    <!-- Main -->
-    <main>
 
         <!-- Header -->
         <header class="header">
             <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood!" class="header--logo">
         </header>
-
+        <!-- Main -->
+        <main>
         <!-- Section1: lieux -->
         <section class="home">
             <div class="home__city">
+                <div class="home__position">
+                <input class="home__city--input" type="text" name="Paris" id="Paris" value="Paris, Belleville">
+                
                 <div class="home__city--icon">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <div class="home__city--name">
-                    <p>Paris, Belleville</p>
                 </div>
-
             </div>
             <div class="home__block">
                 <div class="home__block--title">
@@ -422,7 +421,7 @@
                     <p>Mention légales</p>
                 </div>
                 <div class="footer__text-about">
-                    <p>Contact</p>
+                    <a href="mailto:contact@ohmufood.fr">Contact</a>
                 </div>
             </div>
         </footer>

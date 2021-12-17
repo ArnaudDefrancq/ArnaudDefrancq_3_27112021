@@ -9,7 +9,7 @@ a, a:visited {
   color: black;
 }
 
-input, input:checked {
+input[type=checkbox], input[type=checkbox]:checked {
   display: none;
 }
 
@@ -19,19 +19,15 @@ label {
 
 @font-face {
   font-family: "font1_regular";
-  src: url("../../font/Roboto/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: "font2_thin";
-  src: url("../../font/Roboto/Roboto-Thin.ttf");
+  src: url("../font/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "font3_title";
-  src: url("../../font/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../font/Shrikhand/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "font4_title-accueil";
-  src: url("../../font/Roboto/Roboto-Medium.ttf");
+  src: url("../font/Roboto/Roboto-Medium.ttf");
 }
 .header {
   display: flex;
@@ -50,27 +46,31 @@ label {
 }
 
 .section1 {
-  height: 250px;
+  width: 100%;
+  height: 50vh;
 }
-.section1__img {
-  background: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
-  height: 300px;
+.section1--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .section2 {
   background: #f3f3f3;
-  border-radius: 40px 40px 0 0;
-  height: 100%;
 }
 .section2__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  margin: 0 20px;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-right: 30px;
+  padding-left: 20px;
   position: relative;
+  margin-top: -30px;
+  background: #f3f3f3;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
 }
 .section2__title h1 {
   letter-spacing: 1.2px;
@@ -139,7 +139,8 @@ label {
   text-transform: uppercase;
   margin-left: 20px;
   margin-bottom: 30px;
-  font-family: "font2_thin";
+  font-family: "font1_regular";
+  font-weight: 100;
 }
 .section2__title-menu::before {
   content: "";
@@ -178,7 +179,7 @@ label {
   margin-top: 10px;
 }
 .section2__menu-container--info {
-  font-family: "font2_thin";
+  font-family: "font1_regular";
   min-width: 150px;
 }
 .section2__menu-container--info--text {
@@ -355,6 +356,10 @@ label {
   font-weight: bold;
   padding-left: 15px;
 }
+.footer a {
+  color: unset;
+  text-decoration: none;
+}
 
 @media screen and (min-width: 1100px) {
   .header {
@@ -424,4 +429,4 @@ label {
   }
 }
 
-/*# sourceMappingURL=style_menu4.css.map */
+/*# sourceMappingURL=main_menu.css.map */

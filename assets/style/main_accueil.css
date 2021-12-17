@@ -9,7 +9,7 @@ a, a:visited {
   color: black;
 }
 
-input, input:checked {
+input[type=checkbox], input[type=checkbox]:checked {
   display: none;
 }
 
@@ -19,19 +19,15 @@ label {
 
 @font-face {
   font-family: "font1_regular";
-  src: url("./assets/font/Roboto/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: "font2_thin";
-  src: url("./assets/font/Roboto/Roboto-Thin.ttf");
+  src: url("../font/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "font3_title";
-  src: url("./assets/font/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../font/Shrikhand/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "font4_title-accueil";
-  src: url("./assets/font/Roboto/Roboto-Medium.ttf");
+  src: url("../font/Roboto/Roboto-Medium.ttf");
 }
 .header {
   display: flex;
@@ -89,6 +85,9 @@ label {
   display: flex;
   flex-direction: column;
 }
+.home__position {
+  position: relative;
+}
 .home__city {
   display: flex;
   justify-content: center;
@@ -98,8 +97,18 @@ label {
   height: 45px;
   font-family: "font1_regular";
 }
+.home__city--input {
+  border: none;
+  background: #e4e4e4;
+  margin-left: 70px;
+}
+.home__city--input:focus {
+  outline: none;
+}
 .home__city--icon {
-  padding-right: 15px;
+  position: absolute;
+  top: 0;
+  left: 50px;
 }
 .home__city--name {
   padding-right: 15px;
@@ -122,7 +131,7 @@ label {
 .home__block--text {
   margin-top: 20px;
   text-align: center;
-  font-family: "font2_thin";
+  font-family: "font1_regular";
   font-size: 1.1rem;
 }
 
@@ -260,22 +269,22 @@ label {
   transition: 0.5s;
 }
 .resto__card1 {
-  background: url("./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
+  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
   height: 70%;
   border-radius: 20px 20px 0 0;
 }
 .resto__card2 {
-  background: url("./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") center/cover;
+  background: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg") center/cover;
   height: 70%;
   border-radius: 20px 20px 0 0;
 }
 .resto__card3 {
-  background: url("./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
+  background: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg") center/cover;
   height: 70%;
   border-radius: 20px 20px 0 0;
 }
 .resto__card4 {
-  background: url("./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
+  background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
   height: 70%;
   border-radius: 20px 20px 0 0;
 }
@@ -376,6 +385,10 @@ label {
 .footer__text-icon {
   font-weight: bold;
   padding-left: 15px;
+}
+.footer a {
+  color: unset;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 500px) {
@@ -497,4 +510,4 @@ label {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main_accueil.css.map */

@@ -8,7 +8,7 @@ a, a:visited {
     text-decoration: none;
     color: black;
 }
-input, input:checked {
+input[type='checkbox'], input[type='checkbox']:checked {
     display: none;
 }
 label {

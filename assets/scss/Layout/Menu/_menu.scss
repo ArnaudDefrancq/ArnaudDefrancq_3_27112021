@@ -1,18 +1,29 @@
+.section1 {
+    width: 100%;
+    height: 50vh;
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+}
+
 .section2 {
     background: $colour-background;
-    border-radius: 40px 40px 0 0;
-    height: 100%;
-
+    
     &__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 85px;
-        margin: 0 20px;
-        padding-top: 40px;
+        padding-top: 25px;
         padding-right: 30px;
+        padding-left: 20px;
         position: relative;
-
+        margin-top: -30px;
+        background: $colour-background;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
         & h1 {
             letter-spacing: 1.2px;
             font-family: 'font3_title', sans-serif;
@@ -92,7 +103,8 @@
         text-transform: uppercase;
         margin-left: 20px;
         margin-bottom: 30px;
-        font-family: 'font2_thin';
+        font-family: 'font1_regular';
+        font-weight: 100;
 
         &::before {
             content: '';
@@ -134,7 +146,7 @@
         }
 
         &--info {
-            font-family: 'font2_thin';
+            font-family: 'font1_regular';
             min-width: 150px;
 
             &--text {
