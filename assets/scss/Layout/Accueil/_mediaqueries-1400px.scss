@@ -13,11 +13,10 @@
         height: 100%;
             &__grid {
                 height: 800px;
-                width: 50%;
                 margin: 40px 100px;
-                    &--carte {
-                        width: 20%;
-                    }
+            }
+            &__card {
+                height: 90%;
             }
 
             &__name {

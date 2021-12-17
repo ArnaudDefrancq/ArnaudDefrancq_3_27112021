@@ -490,11 +490,10 @@ label {
   }
   .resto__grid {
     height: 800px;
-    width: 50%;
     margin: 40px 100px;
   }
-  .resto__grid--carte {
-    width: 20%;
+  .resto__card {
+    height: 90%;
   }
   .resto__name {
     font-size: 1.2rem;
